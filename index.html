@@ -12,6 +12,47 @@
         <title>Login or Sign Up</title>
     </head>
     <body>
-        
+        <h1>John Website</h1>
+
+        <section id="login-container">
+            <h2>Welcome Back!</h2>
+            <p class="sub-sentence">Please log in to your account.</p>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username">
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+
+            <button type="submit">Log In</button>
+
+            <p>Or log in with:</p>
+            <div class="social-login">
+                <button class="app1-login">App1</button>
+                <button class="app2-login">App2</button>
+            </div>
+
+            <p>Don't have an account? <a href="#sign-up-container">Sign up</a>.</p>
+        </section>
+
+        <section id="sign-up-container">   
+            <h2>Create an Account</h2>
+            <p class="sub-sentence">Please fill in the form to create an account.</p>
+            
+            <label for="new-username">Username:</label>
+            <input type="text" id="new-username" name="new-username" placeholder="Choose a username">
+            
+            <label for="new-password">Password:</label>
+            <input type="password" id="new-password" name="new-password" placeholder="Choose a password">  
+
+            <button type="submit">Sign Up</button>
+
+            <p>Or sign up with:</p>
+            <div class="social-login">
+                <button class="app1-login">App1</button>
+                <button class="app2-login">App2</button>
+            </div>
+
+            <p>Already have an account? <a href="#login-container">Log in</a>.</p>
+        </section>
     </body>
 </html>
