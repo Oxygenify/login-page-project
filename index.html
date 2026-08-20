@@ -16,7 +16,7 @@
     <body>
         <h1>John Website</h1>
 
-        <section id="login-container">
+        <div id="login">
             <h2>Welcome Back!</h2>
             <p class="sub-sentence">Please log in to your account.</p>
            
@@ -38,10 +38,10 @@
                 <button class="app2-login"> <img src="./assets/9391714.png" width="40" height="40"> App2</button>
             </div>
 
-            <p class="change-mode">Don't have an account? <a href="#sign-up-container">Sign up</a>.</p>
-        </section>
+            <p class="change-login-mode">Don't have an account? <a href="#signup">Sign up</a>.</p>
+        </div>
 
-        <section id="sign-up-container" hidden>
+        <div id="signup" hidden>
             <h2>Create an Account</h2>
             <p class="sub-sentence">Please fill in the form to create an account.</p>
             
@@ -63,7 +63,21 @@
                 <button class="app2-login"> <img src="./assets/9391714.png" width="40" height="40"> App2</button>
             </div>
 
-            <p class="change-mode">Already have an account? <a href="#login-container">Log in</a>.</p>
-        </section>
+            <p class="change-login-mode">Already have an account? <a href="#login">Log in</a>.</p>
+        </div>
+
+        <div id="toggler" class="view-toggler" role="button" tabindex="0" aria-label="Switch to dark mode" aria-pressed="false">
+            <div class="lever"></div>
+
+            <div class="icons-wrapper">
+                <svg class="icon moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black">
+                    <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                </svg>
+                <svg class="icon sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black">
+                    <circle cx="12" cy="12" r="5" />
+                    <path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" stroke="black" stroke-width="2" stroke-linecap="round" />
+                </svg>
+            </div>
+        </div>
     </body>
 </html>
