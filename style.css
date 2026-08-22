@@ -225,7 +225,6 @@ button:active {
 
 body.dark {
     background-image: linear-gradient(45deg, #1b190e, #0c1b27, #240d13, #0a1809);
-    transition: background-image 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body.dark h1, body.dark h2, body.dark p, body.dark .sub-sentence, body.dark label {
@@ -250,7 +249,29 @@ body.dark button {
     transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+    #login, #signup {
+        width: 70vw;
+        font-size: 14px;
+    }
+
+    input[type="text"], input[type="password"] {
+        width: 63%;
+        margin-left: 5px;
+    }
+
+    input::placeholder {
+        font-size: 12px;
+    }
+
+    button {
+        font-size: 12px;
+    }
+
+    button img {
+        margin-right: 18px;
+    }
+
     .view-toggler {
         bottom: auto;
         top: 15px;    
