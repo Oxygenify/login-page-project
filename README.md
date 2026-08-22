@@ -17,6 +17,7 @@ This login page project has several features. The main one obviously being usern
 
 ## Roadmap / Improvements
 - ~~[x] Making login page.~~
+- ~~[x] Adding light-dark mode switch~~
 - [] Implement client-side form validation.
 - [] Add authentication logic.
 - [] Add social media login methods.
